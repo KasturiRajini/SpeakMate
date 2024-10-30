@@ -6,27 +6,35 @@
     font-weight: 20px;
 }
 body{
-    width: 100%;
-    max-height: 1000vh;
+    display: flex;
+    width: 100%; 
+     max-height: 1000vh;
+    /* height: 1000vh; */
+    justify-content: center;
+    align-items: center;
     background:violet;
     text-align: center;
     background-position: cover;
     color: white;
+
 }
 
 .container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 20px;
     align-items: center;
     /* height: 70vh; */
 }
 .game{
-    display: flex;
-    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* height: 70vh;
     width:  26vw;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     gap: 20px;
     /* background:linear-gradient(40deg,white,rgb(13, 162, 220),violet);
     border: 0;
@@ -68,9 +76,10 @@ body{
     }
 }
 
-#head{
+h1{
     padding: 40px;
     margin: 30px;
+    font-size: 24px;
     overflow: hidden;
     white-space: nowrap;
     /* animation: flip 2s ease-in-out infinite; */
@@ -86,7 +95,7 @@ body{
         transform: translateX(-100); /* End to the right */
     }
 }
-#head {
+h1 {
     animation: slide 4s ease-in-out infinite; /* Add slide animation */
 }
 
@@ -127,8 +136,12 @@ body::before{
 }
 
 textarea{
-    width:500px;
-    height: 150px;
+    /* width:500px;
+    height: 150px; */
+    width: 80%;
+    max-width: 300px;
+    height: 100px;
+    margin-top: 20px;
     margin-bottom: 10px;
     background:linear-gradient(40deg,white,skyblue,violet);
     color: #fff;
@@ -138,8 +151,6 @@ textarea{
     padding: 20px;
     border-radius: 15px;
     resize: none;
-
-
 }
 textarea::placeholder{
     font-size: 17px;
@@ -215,5 +226,29 @@ button span{
     font-size: 17px;
     height: 46px;
 }
-
+/*for responsive styling*/
+@media (min-width:600px){
+    .game{
+        grid-template-columns: repeat(4,1fr);
+    }
+    textarea{
+        width: 200px;
+        max-width: 500px;
+    }
+    h1{
+        font-size: 28px;
+    }
+}
+/*for desktops*/
+@media (min-width:900px) {
+    .game{
+        grid-template-columns: repeat(7,1fr);
+    }
+    textarea{
+        width: 500px;
+    }
+    h1{
+        font-size: 32px;
+    }
+}
 
