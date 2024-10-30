@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-weight: 20px;
+}
+body{
+    width: 100%;
+    max-height: 1000vh;
+    background:violet;
+    text-align: center;
+    background-position: cover;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 70vh; */
+}
+.game{
+    display: flex;
+    height: 70vh;
+    width:  26vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* background:linear-gradient(40deg,white,rgb(13, 162, 220),violet);
+    border: 0;
+    outline: 0;
+    border-radius: 30px; */
+    padding: 7px;
+    animation: glow 2s ease-in infinite;
+    background-size: 200% 200%;
+    /* border-style: solid;
+
+    border-color:rgb(235, 4, 120); */
+
+
+}
+.btn{
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+    color: blue;
+    font-size: 30px;
+    box-shadow: 0 0 40px rgb(44, 1, 44);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background:linear-gradient(45deg,white,skyblue,violet);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+
+}
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+       background-position: 100% 50%;
+    }
+    100%{
+       background-position: 0% 50%;
+    }
+}
+
+#head{
+    padding: 40px;
+    margin: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* animation: flip 2s ease-in-out infinite; */
+}
+@keyframes slide {
+    0% {
+        transform: translateX(-100%); /* Start from the left */
+    }
+    50% {
+        transform: translateX(0); /* Center position */
+    }
+    100% {
+        transform: translateX(-100); /* End to the right */
+    }
+}
+#head {
+    animation: slide 4s ease-in-out infinite; /* Add slide animation */
+}
+
+
+span{
+    color:rgb(235, 4, 120);
+    text-decoration: wavy;
+    text-shadow: 15px 15px 7px;
+}
+.in{
+    padding: 30px;
+    margin: 40px;
+
+}
+body::before{
+    content: '';
+    background:linear-gradient(35deg,white,purple,violet,rgb(102, 102, 177),green);
+    position: absolute;
+    background-size: 200% 200% ;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    z-index: -1;
+    filter: blur(30px);
+    animation: glow 5s ease-in infinite;
+}
+@keyframes glow {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+textarea{
+    width:500px;
+    height: 150px;
+    margin-bottom: 10px;
+    background:linear-gradient(40deg,white,skyblue,violet);
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 15px;
+    resize: none;
+
+
+}
+textarea::placeholder{
+    font-size: 17px;
+    background: linear-gradient(rgb(186, 91, 91),blue);
+    color: transparent;
+    background-clip: text;
+}
+#text{
+   color: blue;
+   font-size: 80px;
+}
+.row{
+    width: 300px;
+
+    gap: 10px;
+}
+.row button{
+    background: #ff2963;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 99px;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.reset{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    /* gap:170px; */
+}
+.in{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+button span{
+   width: 18px;
+   margin-right: 9px;
+   margin-top: 6px;
+   color:white;
+   text-shadow: none;
+   height: 25px;
+}
+.row select{
+    /* flex: 1; */
+    width:255px;
+    color:white;
+    background: #ff2963;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    /* appearance: none; */
+}
+.row .clear{
+    width: 200px;
+    font-size: 17px;
+    height: 50px;
+}
+.del{
+    /* width: 150px; */
+    font-size: 17px;
+    height: 46px;
+}
+
+
