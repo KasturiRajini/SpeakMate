@@ -133,6 +133,13 @@ body::before{
         height: 40px;
         font-size: 18px;
     }
+    .hide button{
+        width: 200px;
+    }
+    .instructions{
+        width: 400px;
+    }
+
     h1{
         font-size: 18px;
     }
@@ -147,8 +154,48 @@ body::before{
         width: 35px;
         height: 35px;
     }
+    .hide button{
+        width: 100px;
+    }
+    .instructions{
+        width: 200px;
+    }
     h1{
         font-size: 18px;
     }
+}
+.instructions{
+    background:linear-gradient(45deg,white,skyblue,violet);
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 8px;
+    display: none;
+}
+ol{
+    padding-left: 20px;
+    list-style-type: circle;
+}
+li{
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: left;
+    color: blue;
+}
+.hide{
+    margin-top: 30px;
+}
+.hide button{
+    height: 30px;
+    width: 400px;
+    background: rgb(235, 4, 120);
+    color: whitesmoke;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+
 }
 

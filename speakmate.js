@@ -36,6 +36,16 @@ function speakk(letter){
         speakk(letter);
      })
  })
+  //instructions
+  let inst = document.getElementById("instruct");
+  function hideandshow(){
+    if(inst.style.display == "none"){
+        inst.style.display = "block";
+    }
+    else{
+        inst.style.display = "none";
+    }
+  }
 
 // btns.forEach((btn) =>{
 //     btn.addEventListener('click',() => {
