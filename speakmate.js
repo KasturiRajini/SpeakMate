@@ -37,8 +37,9 @@ function speakk(letter){
      })
  })
   //instructions
-  let inst = document.getElementById("instruct");
+  
   function hideandshow(){
+    let inst = document.getElementById("instruct");
     if(inst.style.display == "none"){
         inst.style.display = "block";
     }

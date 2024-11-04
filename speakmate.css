@@ -134,10 +134,10 @@ body::before{
         font-size: 18px;
     }
     .hide button{
-        width: 200px;
+        width: 290px;
     }
     .instructions{
-        width: 400px;
+        width: 450px;
     }
 
     h1{
@@ -155,10 +155,10 @@ body::before{
         height: 35px;
     }
     .hide button{
-        width: 100px;
+        width: 150px;
     }
     .instructions{
-        width: 200px;
+        width: 250px;
     }
     h1{
         font-size: 18px;
