@@ -4,13 +4,15 @@
     box-sizing: border-box;
     font-family: monospace;
     font-weight: 20px;
+    
 }
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:violet;
+    /* background:violet; */
     text-align: center;
+    background:violet;
     background-position: cover;
     color: white;
 
@@ -99,7 +101,7 @@ span{
 
 body::before{
     content: '';
-    background:linear-gradient(35deg,white,purple,violet,rgb(102, 102, 177),green);
+    background:linear-gradient(35deg,#ffffff,#800080,#ee82ee,#6666b1,#008000);
     position: absolute;
     background-size: 200% 200% ;
     top: -6px;
